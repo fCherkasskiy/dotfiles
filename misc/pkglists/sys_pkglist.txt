@@ -1,0 +1,5 @@
+bat
+ripgrep
+fd
+zoxide
+tree

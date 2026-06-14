@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profile>
+<profileinfo name="My Exclusive Config 1"/>
+<keyitems>
+<item fn_layer="1" key_code="13" layout_value="0" layout_desc="" macro_type="2" macro_value="93" macro_value2="0" macro_value3="0" macro_desc="5"/>
+<item fn_layer="1" key_code="35" layout_value="0" layout_desc="" macro_type="2" macro_value="83" macro_value2="0" macro_value3="0" macro_desc="NumLock"/>
+<item fn_layer="1" key_code="36" layout_value="0" layout_desc="" macro_type="2" macro_value="84" macro_value2="0" macro_value3="0" macro_desc="//"/>
+<item fn_layer="1" key_code="37" layout_value="0" layout_desc="" macro_type="2" macro_value="85" macro_value2="0" macro_value3="0" macro_desc="*"/>
+<item fn_layer="1" key_code="38" layout_value="0" layout_desc="" macro_type="2" macro_value="86" macro_value2="0" macro_value3="0" macro_desc="-"/>
+<item fn_layer="1" key_code="28" layout_value="0" layout_desc="" macro_type="2" macro_value="95" macro_value2="0" macro_value3="0" macro_desc="7"/>
+<item fn_layer="1" key_code="24" layout_value="0" layout_desc="" macro_type="2" macro_value="96" macro_value2="0" macro_value3="0" macro_desc="8"/>
+<item fn_layer="1" key_code="12" layout_value="0" layout_desc="" macro_type="2" macro_value="97" macro_value2="0" macro_value3="0" macro_desc="9"/>
+<item fn_layer="1" key_code="18" layout_value="0" layout_desc="" macro_type="2" macro_value="87" macro_value2="0" macro_value3="0" macro_desc="+"/>
+<item fn_layer="1" key_code="15" layout_value="0" layout_desc="" macro_type="2" macro_value="87" macro_value2="0" macro_value3="0" macro_desc="+"/>
+<item fn_layer="1" key_code="11" layout_value="0" layout_desc="" macro_type="2" macro_value="92" macro_value2="0" macro_value3="0" macro_desc="4"/>
+<item fn_layer="1" key_code="14" layout_value="0" layout_desc="" macro_type="2" macro_value="94" macro_value2="0" macro_value3="0" macro_desc="6"/>
+<item fn_layer="1" key_code="17" layout_value="0" layout_desc="" macro_type="2" macro_value="89" macro_value2="0" macro_value3="0" macro_desc="1"/>
+<item fn_layer="1" key_code="16" layout_value="0" layout_desc="" macro_type="2" macro_value="90" macro_value2="0" macro_value3="0" macro_desc="2"/>
+<item fn_layer="1" key_code="54" layout_value="0" layout_desc="" macro_type="2" macro_value="91" macro_value2="0" macro_value3="0" macro_desc="3"/>
+<item fn_layer="1" key_code="55" layout_value="0" layout_desc="" macro_type="2" macro_value="88" macro_value2="0" macro_value3="0" macro_desc="Enter"/>
+<item fn_layer="1" key_code="44" layout_value="0" layout_desc="" macro_type="2" macro_value="98" macro_value2="0" macro_value3="0" macro_desc="0"/>
+<item fn_layer="1" key_code="230" layout_value="0" layout_desc="" macro_type="2" macro_value="99" macro_value2="0" macro_value3="0" macro_desc="."/>
+<item fn_layer="1" key_code="74" layout_value="0" layout_desc="" macro_type="2" macro_value="75" macro_value2="0" macro_value3="0" macro_desc="PgUp"/>
+<item fn_layer="1" key_code="77" layout_value="0" layout_desc="" macro_type="2" macro_value="78" macro_value2="0" macro_value3="0" macro_desc="PgDn"/>
+<item fn_layer="0" key_code="227" layout_value="0" layout_desc="" macro_type="2" macro_value="227" macro_value2="0" macro_value3="0" macro_desc="Win"/>
+<item fn_layer="0" key_code="226" layout_value="0" layout_desc="" macro_type="2" macro_value="226" macro_value2="0" macro_value3="0" macro_desc="Alt"/>
+<item fn_layer="0" key_code="57" layout_value="0" layout_desc="" macro_type="2" macro_value="41" macro_value2="0" macro_value3="0" macro_desc="Esc"/>
+</keyitems>
+</profile>

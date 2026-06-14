@@ -1,0 +1,28 @@
+gui:
+  nerdFontsVersion: "3"
+
+git:
+  branchLogCmd: "git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=full --oneline {{branchName}} --"
+
+customCommands:
+  - key: "E"
+    description: "Add empty commit with no message"
+    context: "files"
+    command: "git commit --allow-empty --allow-empty-message --no-edit"
+    loadingText: "Committing..."
+
+  - key: "G"
+    description: "Open Github PR in browser"
+    command: "gh pr view -w {{.SelectedLocalBranch.Name}}"
+    context: "localBranches"
+    loadingText: "Opening GitHub PR in browser... "
+  - key: "G"
+    description: "Open Github PR in browser"
+    command: "gh pr view -w"
+    context: "commits"
+    loadingText: "Opening GitHub PR in browser... "
+  - key: "G"
+    description: "Open Github repo in browser"
+    command: "gh browse"
+    context: "files"
+    loadingText: "Opening GitHub repo in browser... "

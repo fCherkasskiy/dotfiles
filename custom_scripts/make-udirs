@@ -1,0 +1,29 @@
+#! /usr/bin/env bash
+# This file is written by xdg-user-dirs-update
+# If you want to change or add directories, just edit the line you're
+# interested in. All local changes will be retained on the next run.
+# Format is XDG_xxx_DIR="$HOME/yyy", where yyy is a shell-escaped
+# homedir-relative path, or XDG_xxx_DIR="/yyy", where /yyy is an
+# absolute path. No other format is supported.
+#
+export XDG_DESKTOP_DIR="$HOME/desktop"
+export XDG_DOWNLOAD_DIR="$HOME/downloads"
+export XDG_TEMPLATES_DIR="$HOME/udirs/templates"
+export XDG_PUBLICSHARE_DIR="$HOME/udirs/public"
+export XDG_DOCUMENTS_DIR="$HOME/udirs/documents"
+export XDG_MUSIC_DIR="$HOME/udirs/music"
+export XDG_PICTURES_DIR="$HOME/udirs/pictures"
+export XDG_VIDEOS_DIR="$HOME/udirs/videos"
+export XDG_PROJECTS_DIR="$HOME/projects"
+
+mkdir -p "$XDG_DESKTOP_DIR"
+mkdir -p "$XDG_DOWNLOAD_DIR"
+mkdir -p "$XDG_TEMPLATES_DIR"
+mkdir -p "$XDG_PUBLICSHARE_DIR"
+mkdir -p "$XDG_DOCUMENTS_DIR"
+mkdir -p "$XDG_MUSIC_DIR"
+mkdir -p "$XDG_PICTURES_DIR"
+mkdir -p "$XDG_VIDEOS_DIR"
+mkdir -p "$XDG_PROJECTS_DIR"
+
+xdg-user-dirs-update

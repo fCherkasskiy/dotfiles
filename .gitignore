@@ -1,0 +1,6 @@
+.DS_Store
+.histfile
+*.zwc
+.zsh_history
+wsl_wezterm.lua
+lazy-lock.json

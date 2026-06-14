@@ -1,0 +1,6 @@
+sudo
+openssh
+vim
+tmux
+git
+python

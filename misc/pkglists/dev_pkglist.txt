@@ -1,0 +1,11 @@
+zsh
+direnv
+nvim
+  npm
+  tree-sitter-cli
+  unzip
+  wget
+  gzip
+xdg-utils
+lazygit
+btop

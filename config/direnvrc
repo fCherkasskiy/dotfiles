@@ -1,0 +1,10 @@
+# vim: set filetype=bash :
+
+layout_conda() {
+  env=$1
+  if [ -n "$env" ]; then
+    source "$CONDA_PATH/etc/profile.d/conda.sh"
+    conda activate "$env"
+    echo "{\"pythonPath\": \"$(which python)\"}" >pyrightconfig.json
+  fi
+}

@@ -1,0 +1,122 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+      # glob: true
+
+- clean:
+    ~/:
+    ~/.config:
+      recursive: true
+    ~/.local/bin:
+      recursive: true
+
+- create:
+    - ~/.config/xdg-ninja
+    # - ~/.config/nvim/nvim.version
+    # - ~/.config/alacritty/os.toml
+
+- link:
+    ~/.local/bin/:
+      path: custom_scripts/*
+      glob: true
+      exclude: ["custom_scripts/xdg-ninja.d"]
+
+    ~/.config/user-dirs.dirs:
+      path: config/user-dirs.dirs
+      if: '[[ $OSTYPE == "linux-gnu" ]]'
+
+    ~/.config/shellenv:
+      path: config/shellenv
+
+    ~/.zshenv:
+      path: config/zsh/zshenv
+      if: "[[ $(zsh --version) ]]"
+    ~/.config/zsh/:
+      path: config/zsh/config/**
+      glob: true
+      prefix: "."
+      if: "[[ $(zsh --version) ]]"
+    ~/.config/zsh/completions:
+      path: config/zsh/completions
+      if: "[[ $(zsh --version) ]]"
+
+    ~/.bashrc:
+      path: config/bash/bashrc
+    ~/.bash_profile:
+      path: config/bash/bash_profile
+    # ~/.bash_logout:
+    #   path: config/bash/bash_logout
+    ~/.config/bash/completions:
+      path: config/bash/completions
+
+    ~/.config/vim/vimrc:
+      path: config/vim/vimrc
+
+    ~/.config/python:
+      path: config/python
+
+    ~/.config/git:
+      path: config/git/*
+      glob: true
+
+    ### OPTIONAL THINGS
+
+    ~/.config/tmux/:
+      path: config/tmux/*
+      glob: true
+
+    ~/.config/starship.toml:
+      path: config/starship.toml
+      if: "[[ $(starship --version) ]]"
+
+    ~/.config/nvim:
+      path: config/nvim
+      if: "[[ $(nvim --version) ]]"
+
+    ~/.config/bob/bobconfig.json:
+      path: config/bob_config.json
+      if: "[[ $(bob --version) ]]"
+
+    ~/.config/btop/btop.conf:
+      path: config/btop.conf
+      if: "[[ $(btop --version) ]]"
+
+    ~/.config/lazygit/config.yml:
+      path: config/lazygit_config.yml
+      if: "[[ $(lazygit --version) ]]"
+
+    ~/.config/direnv/direnvrc:
+      path: config/direnvrc
+      if: "[[ $(direnv --version) ]]"
+
+    ~/.config/appimagelauncher.cfg:
+      path: config/appimagelauncher.cfg
+      if: "[[ $(AppImageLauncher --appimagelauncher-version) ]]"
+
+    ~/.config/keymapper.conf:
+      path: config/keymapper.conf
+      if: "[[ $(keymapper --version) ]]"
+
+    ~/.config/kitty/kitty.conf:
+      path: config/kitty.conf
+      if: "[[ $(kitty --version) ]]"
+
+    ~/.config/wezterm/wezterm.lua:
+      path: config/wezterm/wezterm.lua
+      if: "[[ $(wezterm --version) ]]"
+
+    ~/.config/alacritty/alacritty.toml:
+      path: config/alacritty/alacritty.toml
+      if: "[[ $(alacritty --version) ]]"
+    ~/.config/alacritty/themes:
+      path: config/alacritty/themes
+      if: "[[ $(alacritty --version) ]]"
+
+    ~/.config/ghostty/config.ghostty:
+      path: config/ghostty.conf
+      if: "[[ $(ghostty --version) ]]"
+
+    ~/.config/waybar/config.jsonc:
+      path: config/waybar.jsonc
+      if: "[[ $(waybar --version)]]"

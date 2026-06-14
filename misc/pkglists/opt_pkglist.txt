@@ -1,0 +1,13 @@
+bob
+gnat
+cargo
+pixi
+platformio-core
+
+starship
+fastfetch
+blesh
+
+xdg-ninja
+jq
+glow
