@@ -3,3 +3,5 @@ ripgrep
 fd
 zoxide
 tree
+lsd
+btop

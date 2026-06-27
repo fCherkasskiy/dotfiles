@@ -120,3 +120,7 @@
     ~/.config/waybar/config.jsonc:
       path: config/waybar.jsonc
       if: "[[ $(waybar --version)]]"
+
+    ~/.config/lsd/:
+      path: config/lsd
+      if: "[[ $(lsd --version) ]]"

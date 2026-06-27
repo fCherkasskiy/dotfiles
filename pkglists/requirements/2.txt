@@ -8,4 +8,3 @@ nvim
   gzip
 xdg-utils
 lazygit
-btop

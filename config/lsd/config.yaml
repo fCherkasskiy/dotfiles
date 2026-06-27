@@ -1,0 +1,74 @@
+# Possible values: false, true
+classic: false
+# Possible values: permission, user, group, context, size, date, name, inode, links, git
+blocks:
+  - permission
+  # - user
+  # - group
+  # - context
+  - size
+  - date
+  - name
+  # - inode
+  # - links
+  # - git
+color:
+  # Possible values: never, auto, always
+  when: auto
+  # Possible values: default, custom
+  theme: custom
+# Possible values: date, locale, relative, '+<date_format>'
+date: "+%m/%d/%y %H:%M:%S"
+# Possible values: false, true
+dereference: false
+# Possible values: all, almost-all, directory-only
+# display: all
+icons:
+  # Possible values: always, auto, never
+  when: auto
+  # Possible values: fancy, unicode
+  theme: fancy
+  # Separator between icon and the name
+  # Default to 1 space
+  separator: " "
+# ignore-globs:
+#   - .git
+# Whether to add indicator characters to certain listed files.
+# Possible values: false, true
+indicators: true
+# Possible values: grid, tree, oneline
+layout: oneline
+recursion:
+  # Possible values: false, true
+  enabled: false
+  # Unspecified for (virtually) infinite.
+  # depth: 3
+# Possible values: default, short, bytes
+size: default
+# Possible value: rwx, octal, attributes (windows only), disable
+permission: octal
+# == Sorting ==
+sorting:
+  # Possible values: extension, name, time, size, version
+  column: name
+  # Possible values: false, true
+  reverse: false
+  # Possible values: first, last, none
+  dir-grouping: first
+# Possible values: false, true
+no-symlink: false
+# Possible values: false, true
+total-size: false
+# Possible values: always, auto, never
+hyperlink: auto
+# Specifies how the symlink arrow display, chars in both ascii and utf8
+symlink-arrow: ->
+# Possible values: false, true
+header: false
+# Possible values: false, true
+literal: false
+truncate-owner:
+  # Number of characters to keep. By default, no truncation is done (empty value).
+  after:
+  # String to be appended to a name if truncated.
+  marker: ""

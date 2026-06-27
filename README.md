@@ -4,6 +4,7 @@
 
 ### Any of my machines
 
+- bash
 - sudo
 - openssh
 - vim

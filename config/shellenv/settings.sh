@@ -84,11 +84,19 @@ if command -v xdg-open &>/dev/null; then alias open='xdg-open'; fi
 if command -v yay &>/dev/null; then alias yyay='yes | yay'; fi
 if command -v fdfind &>/dev/null; then alias fd='fdfind'; fi
 if command -v batcat &>/dev/null; then alias bat='batcat'; fi
-
-# alias ls='ls --color=auto'
-alias ls="ls -bFh --color=auto"
-alias l="ls --no-group --group-directories-first -v -g"
+# Listing is so fun
+alias ls="ls -bFh -v --group-directories-first --color=auto"
+if command -v lsd &>/dev/null; then
+  alias l="lsd"
+  alias llal="l --ignore-config -vlAF --group-directories-first --date '+%m/%d/%y %H:%M:%S' --header --git --hyperlink auto"
+else
+  alias l="ls -1"
+  alias llal="ls -v -l"
+fi
 alias la="l -A"
+alias ll="l -l"
+alias lla="l -Al"
+alias lall="llal" # Becuase I mistype a lot
 
 alias cp='cp -i'
 alias mv='mv -i'
