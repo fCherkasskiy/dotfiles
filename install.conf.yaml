@@ -74,9 +74,9 @@
       path: config/nvim
       if: "[[ $(nvim --version) ]]"
 
-    ~/.config/bob/bobconfig.json:
-      path: config/bob_config.json
-      if: "[[ $(bob --version) ]]"
+    # ~/.config/bob/bobconfig.json:
+    #   path: config/bob_config.json
+    #   if: "[[ $(bob --version) ]]"
 
     ~/.config/btop/btop.conf:
       path: config/btop.conf
@@ -98,19 +98,16 @@
       path: config/keymapper.conf
       if: "[[ $(keymapper --version) ]]"
 
-    ~/.config/kitty/kitty.conf:
-      path: config/kitty.conf
+    ~/.config/kitty:
+      path: config/kitty
       if: "[[ $(kitty --version) ]]"
 
     ~/.config/wezterm/wezterm.lua:
       path: config/wezterm/wezterm.lua
       if: "[[ $(wezterm --version) ]]"
 
-    ~/.config/alacritty/alacritty.toml:
-      path: config/alacritty/alacritty.toml
-      if: "[[ $(alacritty --version) ]]"
-    ~/.config/alacritty/themes:
-      path: config/alacritty/themes
+    ~/.config/alacritty:
+      path: config/alacritty
       if: "[[ $(alacritty --version) ]]"
 
     ~/.config/ghostty/config.ghostty:
@@ -121,6 +118,6 @@
       path: config/waybar.jsonc
       if: "[[ $(waybar --version)]]"
 
-    ~/.config/lsd/:
+    ~/.config/lsd:
       path: config/lsd
       if: "[[ $(lsd --version) ]]"

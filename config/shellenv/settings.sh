@@ -28,6 +28,7 @@ if [[ "$OSTYPE" == darwin* ]]; then
   if [[ -d "$GNUPATH/man" ]]; then
     export MANPATH="$GNUPATH/man:$MANPATH"
   fi
+  source "$SHELLENV_DIR/lazy.sh"
 elif [[ "$OSTYPE" == linuxgnu ]]; then
   true
 else
@@ -119,4 +120,3 @@ alias confsettings='$EDITOR $XDG_CONFIG_HOME/shellenv/settings.sh'
 
 source "$SHELLENV_DIR/alias.sh"
 source "$SHELLENV_DIR/functions.sh"
-# source "$SHELLENV_DIR/lazy.sh"
