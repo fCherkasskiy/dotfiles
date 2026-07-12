@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 # shellcheck source=/home/fcher/.config/shellenv/settings.sh
+# Nix
+if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+  source '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+  if [ -e "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh" ]; then
+    source $HOME/.nix-profile/etc/profile.d/hm-session-vars.sh
+  fi
+fi
+# End Nix
 # ========== PATH ==========
 if command -v bob &>/dev/null; then export PATH=$XDG_DATA_HOME/bob/nvim-bin:$PATH; fi
 if command -v pixi &>/dev/null; then

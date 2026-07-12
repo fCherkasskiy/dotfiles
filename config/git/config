@@ -4,5 +4,6 @@
 	autocrlf = input
 [net]
 	git-fetch-with-cli = true
-[include]
-  path = ~/.config/git/personal
+[user]
+  name = "Felix Cherkasskiy"
+  email= = "fcherkasskiy@gmail.com"

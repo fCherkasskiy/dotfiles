@@ -121,3 +121,7 @@
     ~/.config/lsd:
       path: config/lsd
       if: "[[ $(lsd --version) ]]"
+
+    ~/.config/nix:
+      path: config/nix
+      if: "[[ $(nix --version) ]]"

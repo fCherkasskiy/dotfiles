@@ -8,9 +8,6 @@
 # exec 3>&2 2>/tmp/zsh_profile.$$.log
 # setopt xtrace prompt_subst
 
-# z4h source "$ZDOTDIR/xdg_vars.sh"
-# z4h source "$ZDOTDIR/xdg-ninja.sh"
-
 ########################################################################################################################################
 # Personal Zsh configuration file. It is strongly recommended to keep all
 # shell customization and configuration (including exported environment
@@ -19,7 +16,6 @@
 # Periodic auto-update on Zsh startup: 'ask' or 'no'.
 # You can manually run `z4h update` to update everything.
 zstyle ':z4h:' auto-update 'no'
-# Ask whether to auto-update this often; has no effect if auto-update is 'no'.
 zstyle ':z4h:' auto-update-days '28'
 # Keyboard type: 'mac' or 'pc'.
 # if [[ $OSTYPE == "darwin" ]]; then
@@ -122,6 +118,7 @@ alias clear=z4h-clear-screen-soft-bottom
 
 alias bash="bash --login"
 alias confzsh="\$EDITOR \$ZDOTDIR"
+alias nix="noglob nix"
 
 # Set shell options: http://zsh.sourceforge.net/Doc/Release/Options.html.
 setopt glob_dots    # no special treatment for file names with a leading dot
